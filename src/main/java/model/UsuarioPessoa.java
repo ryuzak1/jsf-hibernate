@@ -15,25 +15,25 @@ public class UsuarioPessoa {
     private String email;
     private String login;
     private String senha;
-
+    @OneToMany(mappedBy = "usuarioPessoa",fetch = FetchType.EAGER)
+    private List<TelefoneUsuarios> telefoneUsuariosList;
 
 
 
     public UsuarioPessoa() {
     }
-    public UsuarioPessoa(Long id,String nome,String sobreNome,String email,String login,String senha){
-        this.id=id;
-        this.nome=nome;
-        this.sobreNome = sobreNome;
-        this.email = email;
-        this.login=login;
-        this.senha = senha;
-    }
+//    public UsuarioPessoa(Long id,String nome,String sobreNome,String email,String login,String senha){
+//        this.id=id;
+//        this.nome=nome;
+//        this.sobreNome = sobreNome;
+//        this.email = email;
+//        this.login=login;
+//        this.senha = senha;
+//    }
 
 
     //adicionar o recibmento do relacionamento na tabela ligada.... o mappedBy deve conter o nome da variavel que ligas as classses
-    @OneToMany(mappedBy = "usuarioPessoa",fetch = FetchType.EAGER)
-    private List<TelefoneUsuarios> telefoneUsuariosList;
+
 
     public void setTelefoneUsuariosList(List<TelefoneUsuarios> telefoneUsuariosList) {
         this.telefoneUsuariosList = telefoneUsuariosList;

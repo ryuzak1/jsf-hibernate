@@ -27,6 +27,7 @@
           <element id="library" level="project" name="Maven: org.jboss:jandex:2.0.3.Final" />
           <element id="library" level="project" name="Maven: org.postgresql:postgresql:9.4-1206-jdbc42" />
           <element id="library" level="project" name="Maven: javax.enterprise:cdi-api:1.1" />
+          <element id="library" level="project" name="Maven: com.sun.faces:jsf-impl:2.2.20" />
         </element>
       </element>
     </root>

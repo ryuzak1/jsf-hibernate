@@ -9,7 +9,7 @@ import javax.faces.bean.ViewScoped;
 @ManagedBean
 @ViewScoped
 public class UsuarioPessoaManageBean {
-    private UsuarioPessoa usuarioPessoa = new UsuarioPessoa(1L,"jose","teste","casa","irineu","123");
+    private UsuarioPessoa usuarioPessoa = new UsuarioPessoa();
     private DaoGerenic<UsuarioPessoa> daoGerenic = new DaoGerenic<>();
 
     public UsuarioPessoa getUsuarioPessoa() {
